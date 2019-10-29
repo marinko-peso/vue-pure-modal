@@ -1,10 +1,11 @@
 {
   "name": "vue-pure-modal",
-  "version": "1.0.0",
-  "description": "0.1.0",
+  "version": "0.1.0",
+  "description": "Pure & simple Modal component for Vue",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.vue ."
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,26 @@
   "bugs": {
     "url": "https://github.com/marinko-peso/vue-pure-modal/issues"
   },
-  "homepage": "https://github.com/marinko-peso/vue-pure-modal#readme"
+  "homepage": "https://github.com/marinko-peso/vue-pure-modal#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  }
 }
