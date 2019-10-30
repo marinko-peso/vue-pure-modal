@@ -4,10 +4,6 @@
     <button @click="showModal = true">Show Modal</button>
 
     <pure-modal v-show="showModal" @close="showModal = false">
-      <template v-slot:header>THIS IS CUSTOM HEADER</template>
-      <template v-slot:footer>
-        <button @click="showModal = false">Hide Modal</button>
-      </template>
       modal content goes here
     </pure-modal>
   </div>
@@ -15,6 +11,16 @@
 
 <script>
 import PureModal from '../src/PureModal';
+
+/**
+ * Setting up custom content for header and footer in template:
+    <template v-slot:header>
+      This is a custom <b>Title!</b>
+    </template>
+    <template v-slot:footer>
+      <button @click="showModal = false">Hide Modal</button>
+    </template>
+ */
 
 export default {
   name: 'PureModalPlayground',

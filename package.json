@@ -44,5 +44,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     }
+  },
+  "dependencies": {
+    "focus-trap": "^5.1.0",
+    "focus-trap-vue": "0.0.4"
   }
 }
