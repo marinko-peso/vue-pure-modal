@@ -73,5 +73,9 @@ typings/
 .env.local
 .env.*.local
 
+# mac specific
 .DS_Store
-/dist
+
+# dist builds
+dist/*
+!dist/.gitkeep

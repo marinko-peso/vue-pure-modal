@@ -1,9 +1,12 @@
 {
   "name": "vue-pure-modal",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Pure & simple Modal component for Vue",
   "main": "index.js",
   "scripts": {
+    "clean:dist": "del-cli dist/* !dist/.gitkeep",
+    "dev": "vue serve example/App.vue",
+    "build": "npm run clean:dist && bili",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .js,.vue ."
   },
@@ -26,10 +29,14 @@
   "homepage": "https://github.com/marinko-peso/vue-pure-modal#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "bili": "^4.8.1",
+    "del-cli": "^3.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0"
+    "rollup-plugin-vue": "^5.1.2",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
