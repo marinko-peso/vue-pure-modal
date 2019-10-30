@@ -59,3 +59,22 @@ typings/
 
 # next.js build output
 .next
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# local env files
+.env.local
+.env.*.local
+
+# mac specific
+.DS_Store
+
+# dist builds
+dist/*
