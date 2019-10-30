@@ -1,5 +1,5 @@
 <template>
-  <transition v-if="animation" name="pure-modal-visual">
+  <transition :name="transitionName">
     <div class="puredrop">
       <focus-trap :active="focusTrap">
         <div
@@ -40,9 +40,11 @@ import { FocusTrap } from 'focus-trap-vue';
 export default {
   name: 'PureModal',
   props: {
-    // TODO: control animation?
     animation: { type: Boolean, default: true },
     focusTrap: { type: Boolean, default: true }
+  },
+  computed: {
+    transitionName: ({ animation }) => animation ? 'pure-modal-visual' : null
   },
   components: {
     FocusTrap
@@ -51,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Modal transition animation */
+// Modal transition animation
 .pure-modal-visual {
   &-enter, &-leave-active {
     opacity: 0;
