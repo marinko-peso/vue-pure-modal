@@ -3,7 +3,7 @@
 
 ## Installation
 
-`in progress`
+`npm i vue-pure-modal`
 
 ## Usage
 
