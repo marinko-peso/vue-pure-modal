@@ -1,4 +1,10 @@
 # vue-pure-modal
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![license](https://img.shields.io/github/license/marinko-peso/vue-pure-modal.svg)](https://github.com/marinko-peso/vue-pure-modal/blob/master/LICENSE)
+[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
+[![package version](https://img.shields.io/npm/v/vue-pure-modal.svg)](https://npm.im/vue-pure-modal)
+[![install size](https://packagephobia.now.sh/badge?p=vue-pure-modal)](https://packagephobia.now.sh/result?p=vue-pure-modal)
+
 👾 Pure &amp; simple Vue Modal component. Basic a11y covered.
 
 ## Installation
