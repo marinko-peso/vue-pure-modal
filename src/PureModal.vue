@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style lang="scss">
+/* BEM naming - http://getbem.com/naming/ */
+
+// transition animation
 .puremodal--animation {
   &-enter, &-leave-active {
     opacity: 0;

@@ -12,16 +12,6 @@
 <script>
 import PureModal from '../src/PureModal';
 
-/**
- * Setting up custom content for header and footer in template:
-    <template v-slot:header>
-      This is a custom <b>Title!</b>
-    </template>
-    <template v-slot:footer>
-      <button @click="showModal = false">Hide Modal</button>
-    </template>
- */
-
 export default {
   name: 'PureModalPlayground',
   data: () => ({
