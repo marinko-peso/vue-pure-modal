@@ -78,4 +78,3 @@ typings/
 
 # dist builds
 dist/*
-!dist/.gitkeep

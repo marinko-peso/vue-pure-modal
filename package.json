@@ -2,12 +2,11 @@
   "name": "vue-pure-modal",
   "version": "0.0.1",
   "description": "Pure & simple Modal component for Vue",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/puremodal.common.js",
+  "unpkg": "dist/puremodal.umd.js",
   "scripts": {
-    "clean:dist": "del-cli dist/* !dist/.gitkeep",
-    "dev": "vue serve example/App.vue",
-    "build": "npm run clean:dist && bili",
+    "dev": "vue-cli-service serve example/App.vue",
+    "build": "vue-cli-service build --target lib --name puremodal ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .js,.vue ."
   },
@@ -28,14 +27,19 @@
     "url": "https://github.com/marinko-peso/vue-pure-modal/issues"
   },
   "homepage": "https://github.com/marinko-peso/vue-pure-modal#readme",
+  "files": [
+    "dist",
+    "!dist/demo.html"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@vue/cli-plugin-babel": "^4.0.5",
+    "@vue/cli-service": "^4.0.5",
     "babel-eslint": "^10.0.3",
-    "bili": "^4.8.1",
-    "del-cli": "^3.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.13.0",
-    "rollup-plugin-vue": "^5.1.2",
     "sass-loader": "^8.0.0",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
