@@ -2,7 +2,8 @@
   "name": "vue-pure-modal",
   "version": "0.0.1",
   "description": "Pure & simple Modal component for Vue",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "clean:dist": "del-cli dist/* !dist/.gitkeep",
     "dev": "vue serve example/App.vue",
@@ -36,6 +37,7 @@
     "node-sass": "^4.13.0",
     "rollup-plugin-vue": "^5.1.2",
     "sass-loader": "^8.0.0",
+    "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {

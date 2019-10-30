@@ -1,7 +1,6 @@
 import PureModal from './src/PureModal.vue';
 
-export default {
-  install(Vue) {
-    Vue.component('pure-modal', PureModal);
-  }
-};
+const install = Vue => Vue.component('pure-modal', PureModal);
+
+export default install;
+export { PureModal };
