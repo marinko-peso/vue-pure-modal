@@ -3,7 +3,7 @@
     Here is the page
     <button @click="showModal = true">Show Modal</button>
 
-    <pure-modal v-show="showModal" @close="showModal = false">
+    <pure-modal v-if="showModal" @close="showModal = false">
       <template v-slot:header>
         <b>PureModal</b>  Example
       </template>

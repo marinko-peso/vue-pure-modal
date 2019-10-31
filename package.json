@@ -1,6 +1,6 @@
 {
   "name": "vue-pure-modal",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Pure & simple Modal component for Vue",
   "main": "dist/puremodal.common.js",
   "unpkg": "dist/puremodal.umd.js",

@@ -3,11 +3,13 @@
     <div class="puremodal puremodal__drop">
       <focus-trap :active="focusTrap">
         <div
+          @keydown.esc="$emit('close')"
           class="puremodal__container"
           role="dialog"
           aria-labelledby="pure-header"
           :aria-describedby="describedByBody ? 'pure-body' : false"
           tabindex="-1">
+
           <button
             @click="$emit('close')"
             type="button"
@@ -15,6 +17,7 @@
             aria-label="close modal">
             x
           </button>
+
           <header id="pure-header" class="puremodal__header">
             <slot name="header">Modal</slot>
           </header>
