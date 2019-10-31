@@ -11,6 +11,10 @@
 
 `npm i vue-pure-modal`
 
+## Demo
+
+Checkout demo example on [CodeSandbox](https://codesandbox.io/s/vue-pure-modal-demo-x6n9g).
+
 ## Usage
 
 As global component:
@@ -47,6 +51,7 @@ components: {
 You can specify additional options:
 - `animate` - to apply smooth open/close transition. `true` by default.
 - `focusTrap` - to trap tab focus inside modal while open. `true` by default.
+- `describedByBody` - to set modal a11y describedBy to modal body section. `false` by default.
 
 To use basic style (its not really pretty sorry!) just import generated css:
 ```

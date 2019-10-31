@@ -4,7 +4,10 @@
     <button @click="showModal = true">Show Modal</button>
 
     <pure-modal v-show="showModal" @close="showModal = false">
-      modal content goes here
+      <template v-slot:header>
+        <b>PureModal</b>  Example
+      </template>
+      How do you like the modal so far?
     </pure-modal>
   </div>
 </template>

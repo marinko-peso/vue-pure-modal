@@ -6,7 +6,7 @@
           class="puremodal__container"
           role="dialog"
           aria-labelledby="pure-header"
-          aria-describedby="pure-body"
+          :aria-describedby="describedByBody ? 'pure-body' : false"
           tabindex="-1">
           <button
             @click="$emit('close')"
@@ -19,7 +19,7 @@
             <slot name="header">Modal</slot>
           </header>
 
-          <section id="pure-body" class="puremodal__body">
+          <section id="pure-body" class="puremodal__body" role="document">
             <slot></slot>
           </section>
 
@@ -47,9 +47,11 @@ export default {
   name: 'PureModal',
   props: {
     animation: { type: Boolean, default: true },
-    focusTrap: { type: Boolean, default: true }
+    focusTrap: { type: Boolean, default: true },
+    describedByBody: { type: Boolean, default: false }
   },
   computed: {
+    // Sending transition without name will effectively disable it
     transitionName: ({ animation }) => animation ? 'puremodal--animation' : null
   },
   components: {
@@ -97,13 +99,13 @@ export default {
     flex-direction: column;
     color: #545454;
     position: relative;
+    max-width: 90%;
+    max-height: 90%
   }
 
   &__header {
     padding: 0.8rem 2rem 0.8rem 0.8rem;
-    display: flex;
     border-bottom: 1px solid #DCDCDC;
-    justify-content: space-between;
     word-break: break-all;
   }
 

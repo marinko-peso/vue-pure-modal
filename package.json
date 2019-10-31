@@ -1,11 +1,11 @@
 {
   "name": "vue-pure-modal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pure & simple Modal component for Vue",
   "main": "dist/puremodal.common.js",
   "unpkg": "dist/puremodal.umd.js",
   "scripts": {
-    "dev": "vue-cli-service serve example/App.vue",
+    "dev": "vue serve example/App.vue",
     "build": "vue-cli-service build --target lib --name puremodal ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .js,.vue ."
