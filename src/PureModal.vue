@@ -107,6 +107,7 @@ export default {
     padding: 0.8rem 2rem 0.8rem 0.8rem;
     border-bottom: 1px solid #DCDCDC;
     word-break: break-all;
+    text-align: left;
   }
 
   &__footer {
